@@ -22,7 +22,6 @@
                 <p>Faça login para acessar sua conta. </p>
                 <form  action="login.php" method="post">
                     <div class="formulario">
-                        
                         <label for="usuario"><i class="material-symbols-outlined">Person</i></label>
                         <input type="text" name="usuario" id="usuario" required autocomplete="username" placeholder="@username">
                     </div>
@@ -31,12 +30,13 @@
                         <input type="password" name="senha" id="senha" required minlength="5" placeholder="Mininimo 5 caracters" autocomplete="current-password"> 
                     </div>
                     <div>
-                        <input id="botaoEnviar" type="submit" value="Enviar" >
+                        <input id="botaoEnviar" type="submit" value="logar" >
                     </div>
+                    <p>
+                        <a  href=""><button id="botaoEsqueceu">Esqueceu a senha?</button></a>
+                    </p>
                 </form>
-                <p>
-                    <a  href=""><button id="botaoEsqueceu">Esqueceu a senha?</button></a>
-                </p>
+
             </div>
         </section>
     
