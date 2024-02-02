@@ -132,7 +132,7 @@ div#parte2{
 
 div > input#ibotaoEnviar{
     background-color: var(--cor0);
-    color: white;
+    color: rgb(255, 255, 255);
 
     height: 40px;
     width: 100%;

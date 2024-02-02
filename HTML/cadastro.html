@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link para CSS --> 
+        <link rel="stylesheet" href="estilosCSS/todas.css">
+        <link rel="stylesheet" href="estilosCSS/mobile.css">
+        <link rel="stylesheet" href="estilosCSS/telas-cadastro.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="cadastro">
+            <form action="">
+                <fieldset>
+                    <legend>Imagem</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required  placeholder="Digite seu nome" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" required placeholder="Digite seu sobrenome" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="data">Data de nascimento</label>
+                        <input type="date" name="data" id="data" value="">
+                    </div>
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" required minlength="10" maxlength="14" placeholder="Digite seu CPF"  pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}">
+                    </div>
+                    <div>
+                        <label for="estado">Estado</label>
+                        <select name="estados" id="estado">
+                            <option value="Estado" data-default disabled selected>Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>                 
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí Santo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="DF">Distrito Federal</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="telefone">telefone</label>
+                        <input type="tel" name="telefone" id="telefone" autocomplete="tel" pattern="^[0-9]{5}-[0-9]{4}$" required placeholder="XXXXX-XXXX">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="email" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Usuário</legend>
+                    <div>
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="15" placeholder="Nome do usuário" autocomplete="username">
+                    </div>
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" required minlength="5" placeholder="Míninimo 5 letras" autocomplete="current-password">
+                    </div>
+                    </fieldset>
+                    <fieldset id="escolhaRomance">
+                        <legend id="legendaRomance">Quais são seus romances favoritos</legend>
+                        <input class="romances" type="checkbox" name="Friends" id="Friends">
+                        <label for="Friends">Friends to Lovers</label> 
+                        <br>
+                        <input type="checkbox" name="dating" id="dating">
+                        <label for="dating">Fake dating</label> 
+                        <br>
+                        <input type="checkbox" name="Enemies" id="Enemies">
+                        <label for="Enemies">Enemies to Lovers</label> 
+                        <br>
+                        <input type="checkbox" name="cama" id="cama">
+                        <label for="cama">Só tem uma cama</label> 
+                        <br>
+                        <input type="checkbox" name="AgeGap" id="AgeGap">
+                        <label for="AgeGap">Age Gap</label> 
+                        <br>
+                        <input type="checkbox" name="SlowBurn" id="SlowBurn">
+                        <label for="SlowBurn">Slow Burn</label> 
+                        <br>
+                        <input type="checkbox" name="FastBurn" id="FastBurn">
+                        <label for="FastBurn">Fast Burn</label> 
+                        <br>
+                        <input type="checkbox" name="GxS" id="GxS">
+                        <label for="GxS">Grumpy x sunshine</label> 
+                    </fieldset>
+                    <div id="enviar">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

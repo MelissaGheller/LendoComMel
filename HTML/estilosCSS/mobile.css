@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor0: #000042;
+    --cor1: #00008B;
+    --cor2: #0000CD;
+    --cor3: #4000FF;
+    --cor4: #0095f1;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+section#cadastro{
+    background-color: #0095f13a;
+
+    width: 400px;
+
+    position: absolute;
+    overflow-x: hidden;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form >  fieldset{
+    border: 1px solid var(--cor4);
+    text-align: center;
+    margin: 10px ;
+    padding: 10px;
+
+}
+form >  fieldset > legend{
+    color: var(--cor4);
+}
+fieldset > div > label{
+    display: none;
+
+}
+fieldset > div > input{
+    background-color: #ffffff;
+    border: 1px solid var(--cor0) ;
+    color: rgb(0, 0, 0);
+
+
+    width: 300px;
+
+    margin: 2px;
+    padding: 5px;
+}
+fieldset > div > input#data{
+    color: rgb(0, 0, 0);
+}
+
+fieldset > div > select{
+    width: 310px;
+    color: rgb(0, 0, 0);
+
+    margin: 2px;
+    padding: 5px;
+}
+
+fieldset#escolhaRomance{
+   text-align: justify;
+    column-count: 2;
+
+}
+fieldset > legend#legendaRomance{
+    text-align: center;
+ 
+}
+div#enviar{
+    display: flex;
+}
+div > input{
+    background-color: var(--cor0);
+    color: white;
+    
+    height: 30;
+    width: 40%;
+    
+    padding: 5px;
+    margin: 10px auto;
+    
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+}    
+div > input:hover{
+        background-color: var(--cor3);
+}
