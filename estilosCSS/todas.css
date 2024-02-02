@@ -20,15 +20,17 @@
 body, html{
     background-color: var(--cor0);
     color: rgb(255, 252, 252);
-
     width: 100vw;
     height: 100vh;
+
     overflow-x: hidden;
 }
 
 main{
     width: 100vw;
     height: 100vh;
-    display: relative;
+    display: block;
+
+    padding: auto;
 }
 
