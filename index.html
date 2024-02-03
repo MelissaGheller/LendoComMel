@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- links para emojis --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Link para CSS --> 
+    <link rel="stylesheet" href="../estilosCSS/geral.css">
+    <link rel="stylesheet" href="../estilosCSS/telas.css">
+
+
+
+    <title>Login Tranparenye</title>
 </head>
 <body>
     <main>
-        <p>oi</p>
-        <a href="./HTML/login.html">bo</a>
-        <button><a href="./HTML/login.html">Oi</a></button>
-
+        <section id="login">
+            <section id="imagem">
+                  <!-- espaço para imagem -->
+            </section>
+            <section id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a). </p>
+                <p>Faça login para acessar sua conta. </p>
+                  <!-- formulario -->
+                <form action="">
+                    
+                    <div class="dados">
+                          <!-- Username-->
+                        <label class="simbolo" for="iusername"><i class="material-symbols-outlined">Person</i></label></label>
+                        <input type="text"  class="input" id="iusername" name="username" placeholder="@username" required autocomplete="username">
+                    </div>
+                    <div class="dados">
+                          <!-- Senha -->
+                        <label class="simbolo" for="isenha"><i class="material-symbols-outlined">Lock</i></label></label>
+                        <input  class="input" type="password" id="isenha" name="senha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="********">
+                    </div>
+                    <div id="informacoes">
+                        <div id="parte1">
+                              <!-- lembrar-->
+                            <input type="checkbox" id="ilembrar" name="lembrar" checked />
+                            <label class="partes" for="ilembrar">Lembre-me</label>
+                        </div>
+                        <div id="parte2">
+                              <!-- Esqueci senha -->
+                            <a class="partes" href="">Esqueci a senha</a>
+                        </div>
+                    </div>
+                    <div>
+                          <!-- botão enviar -->
+                        <input id="ibotaoEnviar" type="submit" value="logar">
+                    </div>
+                    <p>Não tem uma conta? <a href="cadastro.html" target="_blank" >Cadastre-se.</a></p>
+                </form>
+            </section>
+        </section>
     </main>
 </body>
 </html>
